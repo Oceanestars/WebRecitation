@@ -1,0 +1,22 @@
+
+
+h1{
+	color:rgb(50,50,50);
+	font-family: helvetica, arial, sans-serif;
+}
+
+h2{
+	color:rgb(144, 22, 22);
+	font-family: helvetica, arial, sans-serif;
+}
+.row{
+    display:flex;
+
+}
+.column {
+    flex: 50%;
+
+}
+header{
+    margin-bottom: 50px;
+}
