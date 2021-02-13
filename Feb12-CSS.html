@@ -1,0 +1,67 @@
+<!-- Great article about aligning elements: https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ -->
+<!-- https://careerkarma.com/blog/css-class-vs-id-2/ -->
+<!-- CSS class applies a style to multiple elements. ID, on the other hand, applies a style to one unique element. ID is also special in that you can use a special URL to link directly to an element and it’s used by JavaScript. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>CSS example</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 50px;">Horizontally align images</h1>
+    <h2>CSS Grid Example</h2>
+    <!-- http://cssgridgarden.com/ -->
+
+    <div class="container">
+        <div class="item">
+            <img src="img/sushi1.png" width="350" height="200" alt="This is an image of sushi">
+        </div>
+        <div class="item">
+            <img src="img/sushi2.png" width="350" height="200" alt="This is an image of sushi" >
+        </div>
+        <div class="item">
+            <img src="img/sushi3.png" width="350" height="200" alt="This is an image of sushi">
+        </div>
+    </div>
+
+
+    <h2 class="spaceMargin">CSS Flexbox Example</h2>
+    <!-- http://flexboxfroggy.com/ -->
+
+    <div class="flex-container">
+        <div class="item-flexbox">
+            <img src="img/colorado4.png" width="350" height="200" alt="This is an image of colorado" >
+        </div>
+        <div class="item-flexbox">
+            <img src="img/colorado5.png" width="350" height="200" alt="This is an image of colorado" >
+        </div>
+        <div class="item-flexbox">
+            <img src="img/colorado6.png" width="350" height="200" alt="This is an image of colorado" >
+        </div>
+    </div>
+
+    <h2 class="spaceMargin">CSS Float Example</h2>
+    <!-- https://www.w3schools.com/howto/howto_css_three_columns.asp -->
+    <div class="row">
+        <div class="column">
+            <img src="img/coding7.png" width="350" height="200" alt="This is an image of coding" >
+        </div>
+        <div class="column">
+            <img src="img/coding8.png" width="350" height="200" alt="This is an image of coding">
+        </div>
+        <div class="column">
+            <img src="img/coding9.png" width="350" height="200" alt="This is an image of coding">
+        </div>
+    </div>
+
+    <h2 class="spaceMargin">Align verticaly and horizontally in a div</h2>
+    <div class="paddingMargin">
+        <img class="child" src="img/Margin-Padding.jpg" width="200" height="150" alt="This is an image of margin and padding">
+    </div>
+
+</body>
+</html>

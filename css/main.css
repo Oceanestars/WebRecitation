@@ -1,0 +1,56 @@
+/* CSS Grid example */
+/* The percentage is the percentage of the page so If you resize the page the picture will move. 
+You can look into media query(This will come much late rin the semester) */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body{
+    text-align: center;
+    font-family: Titillium Web,monospace;;
+}
+.spaceMargin{
+    margin-top: 100px;
+}
+/* CSS Grid example */
+.container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%; 
+    grid-template-rows: auto;
+  }
+
+/* CSS Flexbox example */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.item-flexbox{
+    margin: 10px;
+}
+
+/* CSS Float example */
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Align vertically and horizontally */
+/* https://www.w3schools.com/cssref/pr_class_position.asp */
+.paddingMargin{
+    width: 300px;
+    height: 300px;
+    border: 10px solid;
+    position: relative;
+    margin: auto;
+}
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
