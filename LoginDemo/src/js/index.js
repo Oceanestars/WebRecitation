@@ -1,4 +1,3 @@
-
 function setup() {
   //Your firebase config will have different things
   var firebaseConfig = {
@@ -27,7 +26,6 @@ function setup() {
   //   });
 }
 
-//
 function resetPass() {
   var notyf = new Notyf();
   var emailAddress = document.getElementById("emailVal").value;
@@ -50,6 +48,8 @@ function loggingIn() {
   var email = document.getElementById("emailVal").value;
   var password = document.getElementById("passVal").value;
   const promise = firebase.auth().signInWithEmailAndPassword(email, password);
+  //A promise is a returned object to which you attach callbacks(A callback is a function passed as an argument to another function), 
+  //instead of passing callbacks into a function.
   promise.then(function(data) {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user && user.emailVerified == true) { // User is signed in.
@@ -109,5 +109,4 @@ function introPage() {
 
 function setName(){
   document.getElementById("name").innerHTML = firebase.auth().currentUser.displayName;
-  var userId = firebase.auth().currentUser.uid;
 }
