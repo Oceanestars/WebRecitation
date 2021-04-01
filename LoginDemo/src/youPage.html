@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/p5.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          setName();
+        }, 1000);
+      });
+    </script>
+
+    <title>YouPage</title>
+  </head>
+  <body>
+    <section class="container">
+      <div id="animated-example" class="animated fadeIn">
+        <h1 class="title">
+          <span>Hi, nice</span>
+          <span>to see</span>
+          <span id="meh">you here</span>
+          <span id="name"></span>
+          <h2 id="try"></h2>
+        </h1>
+      </div>
+    </section>
+  </body>
+  <script src="js/index.js"></script>
+</html>

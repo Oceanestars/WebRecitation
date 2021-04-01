@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/p5.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style/style_welcomepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="right">
+        <div class="form">
+          <h2 style="padding-top: 30px; padding-bottom: 40px">Login Page</h2>
+          <input id="nameVal" type="text" placeholder="Name" />
+          <input id="emailVal" type="email" placeholder="Email Address" />
+          <input id="passVal" type="password" placeholder="Password" />
+          <p>
+            <a id="my_tag" href="#" onclick="resetPass()">Forgot Password?</a>
+          </p>
+          <div class="btn-group">
+            <button class="form-button" onclick="loggingIn()">LOGIN</button>
+            <button class="form-button" onclick="signingUp()">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
