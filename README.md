@@ -8,6 +8,8 @@ This repo is for code examples and resources for ATLS 2200. If you find anything
 - [HTML Lists](Jan28-Lab3.html)
 - [CSS Example](Feb12-CSS.html)
 - [Embed Media](Feb04-Lab4.html)
+- [Responsive Design](ResponsiveDesign/index.html)
+- [Firebase Login](https://github.com/Oceanestars/WebRecitation/tree/master/LoginDemo)
 
 
 ### Resources
