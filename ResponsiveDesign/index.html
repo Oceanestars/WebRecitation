@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/prism.css" rel="stylesheet" type="text/css" />
+
+    <title>Responsive Example</title>
+  </head>
+  <body>
+    <div id="overallDiv">
+      <div class="gridContainer">
+        <section id="header">
+          <h1>Responsive Design</h1>
+          <p>
+            Hey team! Here some examples for grid, and media query <br />
+            media queries are a popular technique for delivering a tailored
+            style sheet to desktops, laptops, tablets, and mobile phones. If
+            you'd like to read more about media query, checkout this
+            <a
+              href="https://polypane.app/blog/the-complete-guide-to-css-media-queries/"
+              target="_blank"
+              >media query guide</a
+            >.For grids, I recommend you do the
+            <a href="http://cssgridgarden.com/" target="_blank">grid garden</a>
+            and read
+            <a
+              href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+              target="_blank"
+            >
+              the complete guide to grid</a
+            >
+          </p>
+        </section>
+
+        <section id="mediaQuery1">
+          <h3>Media Query for Mobile</h3>
+          <!-- Sorry for triggering anyone with this spacing but the pre tag forces me to do that -->
+          <pre class="codeSnippet">
+        <code class="language-css">
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body{
+                font-size: 20px;
+            }
+        }
+        </code>
+        </pre>
+          <p>
+            The code above says if device width is less than or equals to 600px
+          </p>
+        </section>
+
+        <section id="mediaQuery2">
+          <h3>Media Query for Medium Size device</h3>
+          <pre class="codeSnippet">
+        <code class="language-css">
+        /* Medium devices (tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body{
+                font-color: red;
+            }
+        }
+        </code>
+        </pre>
+          <p>
+            The code above says if device width is greater than or equals to
+            768px
+          </p>
+        </section>
+
+        <section id="mediaQuery3">
+          <h3>Media Query for Medium Size device</h3>
+          <pre class="codeSnippet">
+        <code class="language-css">
+        /* Large devices */
+        @media only screen and (min-width:1024px){ 
+            body{
+                font-size:16px;
+            }
+        }
+        </code>
+        </pre>
+          <p>
+            The code above says if device width is greater than or equals to
+            1200px(And we also have greater than or equal to 992px)
+          </p>
+        </section>
+      </div>
+
+      <!-- grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
+ -->
+      <div id="photoGallery">
+        <h3>Photo Gallery</h3>
+        <br />
+
+        <div class="gridAreaContainer">
+          <img
+            class="portrait"
+            id="image1"
+            src="img/collins-lesulie-HWFCBG_-iTc-unsplash.jpg"
+            alt=""
+          />
+          <img
+            class="portrait"
+            id="image2"
+            src="img/james-marc-mercado--FOOn8kZkuw-unsplash.jpg"
+            alt=""
+          />
+          <img
+            class="landscape"
+            id="image3"
+            src="img/james-wheeler-ZOA-cqKuJAA-unsplash.jpg"
+            alt=""
+          />
+          <img
+            class="landscape"
+            id="image4"
+            src="img/paul-gilmore-PjpuXmX7DAA-unsplash.jpg"
+            alt=""
+          />
+          <img
+            class="portrait"
+            id="image5"
+            src="img/roberto-nickson-9-hwto4NRCY-unsplash.jpg"
+            alt=""
+          />
+          <img
+            class="landscape"
+            id="image6"
+            src="img/shot-by-cerqueira-8qH4GSYBiSA-unsplash.jpg"
+            alt=""
+          />
+          <img
+            class="landscape"
+            id="image7"
+            src="img/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script src="prism.js"></script>
+  </body>
+</html>
