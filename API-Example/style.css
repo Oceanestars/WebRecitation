@@ -1,0 +1,21 @@
+body, button{
+  font-family: monospace;
+}
+
+#factContainer{
+  width: 85%;
+  height: auto; 
+  /* So the blue box resize according to the content */
+  background-color: rgb(203, 255, 251);
+  color: black;
+  text-align: center;
+  margin: auto;
+  margin-bottom:50px;
+}
+
+#fact{
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  width:70%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Example</title>
+  </head>
+
+  <body>
+    <h1>API Examples</h1>
+    <p>
+      Below are two examples of 2 API. One generates cat facts and the other
+      grabs the name from an input and predict the age based on the name. The
+      second one is a bit more elaborate since I have to grab the value of the
+      input and concatenate it to the api url.
+    </p>
+    <div>
+      <h2>Fun Cat Fact API</h2>
+      <div id="factContainer">
+        <p id="fact">
+          Default fact because why not. Testing the wrapping of text with
+          something longer
+        </p>
+      </div>
+    </div>
+    <div id="ageApi">
+      <h2>Age Predicting Api based on your name</h2>
+      <label for="fname">Enter your first name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <p id="displayAge">Age Predicted:</p>
+      <br />
+      <button type="button" onclick="getapi()">Predict my age!</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
