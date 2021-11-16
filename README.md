@@ -10,6 +10,7 @@ This repo is for code examples and resources for ATLS 2200. If you find anything
 - [Embed Media](Feb04-Lab4.html)
 - [Responsive Design](ResponsiveDesign/index.html)
 - [Firebase Login](https://github.com/Oceanestars/WebRecitation/tree/master/LoginDemo)
+- [API Example](API-Example/index.html)
 
 
 ### Resources
