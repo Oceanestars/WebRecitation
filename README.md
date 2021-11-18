@@ -1,9 +1,11 @@
 # WebRecitation
+
 ###### Written by Oceane Andreis
 
 This repo is for code examples and resources for ATLS 2200. If you find anything that can be useful by others feel free to do a pull request.
 
 ### Specific Examples
+
 - [Hello World Basic HTML Page](Jan14-Lab1.html)
 - [HTML Lists](Jan28-Lab3.html)
 - [CSS Example](Feb12-CSS.html)
@@ -11,10 +13,10 @@ This repo is for code examples and resources for ATLS 2200. If you find anything
 - [Responsive Design](ResponsiveDesign/index.html)
 - [Firebase Login](https://github.com/Oceanestars/WebRecitation/tree/master/LoginDemo)
 - [API Example](API-Example/index.html)
-
+- [Format Date Example](FormatDate.html)
+- [DOM Example](DOM-Example/index.html)
 
 ### Resources
-
 
 #### HTML
 

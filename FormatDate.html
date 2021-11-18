@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div>
+		<h1>Date example:</h1>
+
+		<h2 id="format1"></h2>
+		<h2 id="format2"></h2>
+		<h2 id="format3"></h2>
+
+	</div>
+	<!-- Internal JS example below -->
+	<script>
+		const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+    ];
+    const days = [
+    'Sunday',
+    'Monday',
+    'Tueday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+    ];
+    let date1 = document.getElementById("format1");
+    let date2 = document.getElementById("format2");
+    let date3 = document.getElementById("format3");
+
+
+    const d = new Date()
+    const year = d.getFullYear() // 2021
+    const date = d.getDate()  //current day num
+    const monthName = months[d.getMonth()] //current month
+    const dayName = days[d.getDay()] // //current day 
+    const formatted = `${dayName}, ${date} ${monthName} ${year}`
+
+
+// Look at these variable in the console  
+    console.log(new Date().toDateString());
+    console.log(d); //unformatted
+    console.log(monthName)
+    console.log(year);
+    console.log(date);
+    console.log(dayName);
+    console.log(formatted);
+
+    date1.innerHTML = formatted;
+    date2.innerHTML = new Date().toDateString();
+   
+
+// Get all 7 days of the week
+let curr = new Date;
+let week = []
+
+for (let i = 1; i <= 7; i++) {
+  let first = curr.getDate() - curr.getDay() + i 
+  let day = new Date(curr.setDate(first)).toISOString().slice(0, 10)
+  week.push(day + '<br>')
+}
+ // so you'd need to format each day. Look above
+date3.innerHTML = week;
+console.log('week:', week);
+	</script>
+  </body>
+</html>
