@@ -14,7 +14,7 @@ This repo is for code examples and resources for ATLS 2200. If you find anything
 - [Firebase Login](https://github.com/Oceanestars/WebRecitation/tree/master/LoginDemo)
 - [API Example](API-Example/index.html)
 - [Format Date Example](FormatDate.html)
-- [DOM Example](DOM-Example/index.html)
+- [DOM Example](Dom-Example/index.html)
 
 ### Resources
 
